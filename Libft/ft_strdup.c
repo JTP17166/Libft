@@ -16,7 +16,7 @@
 
 char	*ft_strdup(const char *src)
 {
-	char	*str;
+	char		*str;
 	int		len;
 	int		i;
 
@@ -40,5 +40,5 @@ char	*ft_strdup(const char *src)
 * L17 -> The strdup() function allocates sufficient 
 * memory for a copy of the string S1, 
 * does the copy, and returns a pointer to it.
-* L24 -> strlen, strnlen -- find length of string.
+* L24 -> strlen -- find length of string.
 */
