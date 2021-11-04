@@ -18,5 +18,9 @@ void	ft_putendl_fd(char *s, int fd)
 	ft_putchar_fd('\n', fd);
 }
 
-/* L15 -> Outputs the string S to the given file descriptor, 
- * followed by a newline.*/
+/* 
+* L15 -> Outputs the string S to the given file descriptor, 
+* followed by a newline.
+* L17 -> Outputs the string ’s’ to the given file descriptor.
+* L18 -> Outputs the character ’c’ to the given file descriptor.
+*/
