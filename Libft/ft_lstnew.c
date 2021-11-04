@@ -26,7 +26,8 @@ t_list	*ft_lstnew(void *content)
 	return (new);
 }
 
-/* L15 -> Allocates and returns a new element. 
+/* 
+* L15 -> Allocates and returns a new element. 
 * The variable CONTENT is initialized with the value of the paramether CONTENT. 
 * The variable NEXT is initialized to NULL.
 */
