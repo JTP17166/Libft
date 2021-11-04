@@ -42,4 +42,12 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 * Creates a new list resulting of the successive 
 * applications of the function F. 
 * The DEL function is used to delete the content of an element if needed.
+* L27 -> Allocates (with malloc(3)) and returns a new element.
+* The variable ’content’ is initialized with the value of the
+* parameter ’content’.
+* The variable ’next’ is initialized to NULL.
+* L30 -> Deletes and frees the given element and every successor 
+* of that element, using the function ’del’ and free(3).
+* Finally, the pointer to the list must be set to NULL.
+* L33 -> Adds the element ’new’ at the end of the list.
 */
