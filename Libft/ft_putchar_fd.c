@@ -17,4 +17,6 @@ void	ft_putchar_fd(char c, int fd)
 	write (fd, &c, 1);
 }
 
-/* L15 -> Outputs the character C to the given file descriptor.*/
+/* 
+* L15 -> Outputs the character C to the given file descriptor.
+*/
