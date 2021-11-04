@@ -28,8 +28,10 @@ void	*ft_calloc(size_t count, size_t size)
 }
 
 /* 
-* L17 -> The malloc() function allocats SIZE 
-* bytes of memory and returns a pointer at the 
-* allocated memory.
+* L17 -> The calloc() function contiguously allocates enough space for count 
+* objects that are size bytes of memory each and returns a pointer to the allocated memory.  
+* The allocated memory is filled with bytes of value zero.
+* L21 -> The malloc() function allocates size bytes of memory and returns a pointer 
+to the allocated memory.
 * L26 -> bzero -- write zeroes to a byte string.
 */
