@@ -25,5 +25,6 @@ int	ft_lstsize(t_list *lst)
 	return (len);
 }
 
-/* L15 -> Counts the number of elements in a list.
- */
+/* 
+* L15 -> Counts the number of elements in a list.
+*/
