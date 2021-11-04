@@ -33,4 +33,10 @@ void	ft_putnbr_fd(int n, int fd)
 	}
 }
 
-/* L15 -> Outputs the intenger N to the given file descriptor.*/
+/* 
+* L15 -> Outputs the intenger N to the given file descriptor.
+* L23 -> Outputs the character ’c’ to the given file descriptor.
+* L27 -> Outputs the integer ’n’ to the given file descriptor.
+* L28 -> Outputs the character ’c’ to the given file descriptor.
+* L32 -> Outputs the character ’c’ to the given file descriptor.
+*/
