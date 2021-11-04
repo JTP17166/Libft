@@ -20,3 +20,7 @@ t_list	*ft_lstlast(t_list *lst)
 		lst = lst->next;
 	return (lst);
 }
+
+/*
+* L15 -> Returns the last element of the list.
+*/
