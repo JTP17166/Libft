@@ -28,4 +28,7 @@ void	ft_putstr_fd(char *s, int fd)
 	}
 }
 
-/* L15 -> Outputs the string S to the given file descriptor.*/
+/* 
+* L15 -> Outputs the string S to the given file descriptor.
+* L26 -> Outputs the character ’c’ to the given file descriptor.
+*/
