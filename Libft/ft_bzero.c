@@ -29,6 +29,6 @@ void	ft_bzero(void *s, size_t n)
 }
 
 /*
-* L17 -> The bzero() function writes n zeroed bytes to the string s.
+* L17 -> The bzero() function writes n zeroes bytes to the string s.
 * If n is zero, bzero() does nothing.
 */
