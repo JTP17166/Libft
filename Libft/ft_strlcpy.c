@@ -36,7 +36,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 }
 
 /*
- * L17 -> strlcpy() copies up to dstsize - 1 characters 
- * from the string src to dst, 
- * NUL-terminating the result if dstsize is not 0.
+* L17 -> strlcpy() copies up to dstsize - 1 characters 
+* from the string src to dst, 
+* NUL-terminating the result if dstsize is not 0.
 */
