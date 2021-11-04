@@ -59,11 +59,12 @@ char	*ft_itoa(int n)
 	return (ptr);
 }
 
-/* L15 -> Finds the len of the int (n).
- * L34 -> Allocates and returns a string
- * representing the intenger received as an argument.
- * Negative numbers must be handled.
- * L39 -> If n = the lowest int number possible
- * returns the lowest number possible.
- * ft_strdup = Saves a copy of the string.
- * L43 -> len = finds the len of the int(n).*/
+/*
+* L15 -> ft_intlen -- find the length of an integer.
+* L34 -> Allocates (with malloc(3)) and returns a string 
+* representing the integer received as an argument.
+* Negative numbers must be handled.
+* L40 -> strdup -- save a copy of a string.
+* L42 -> strdup -- save a copy of a string.
+* L43 -> ft_intlen -- find the length of an integer.
+*/
