@@ -25,5 +25,6 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 	*lst = new;
 }
 
-/* 	L15 -> Adds the element NEW at the beginning of the list.
+/*
+* L15 -> Adds the element NEW at the beginning of the list.
 */
