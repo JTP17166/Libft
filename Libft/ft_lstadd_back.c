@@ -27,5 +27,6 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 		*lst = new;
 }
 
-/* L15 -> Adds the element NEW at the end of the list
- */
+/* 
+* L15 -> Adds the element NEW at the end of the list.
+*/
