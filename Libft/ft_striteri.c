@@ -28,6 +28,8 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 	}
 }
 
-/* L15 -> Applies the function F to each character of the string 
- * passed as argument. Each character is passed by address 
- * to F to be modified if necessary.*/
+/* 
+* L15 -> Applies the function F to each character of the string 
+* passed as argument. Each character is passed by address 
+* to F to be modified if necessary.
+*/
