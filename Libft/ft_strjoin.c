@@ -43,7 +43,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 * L15 -> Allocates (with malloc(3)) and returns a new
 * string, which is the result of the concatenation
 * of ’s1’ and ’s2’.
-* L25 -> strlen, strnlen -- find length of string.
-* L30 -> strlen, strnlen -- find length of string.
+* L25 -> strlen -- find length of string.
+* L30 -> strlen -- find length of string.
 * L32 -> memcpy -- copy memory area.
 */
