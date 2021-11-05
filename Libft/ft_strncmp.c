@@ -30,5 +30,5 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 
 /*
  * L17 -> The strcmp() and strncmp() functions lexicographically compare 
- * the null-termi-nated strings s1 and s2.
+ * the null-terminated strings s1 and s2.
 */
