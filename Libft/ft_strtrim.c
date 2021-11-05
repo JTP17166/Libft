@@ -44,8 +44,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 * L15 -> Allocates and returns a copy of S1 with the 
 * characters specified in SET removed from the beginning 
 * and the end of the string.
-* L25 -> strlen, strnlen -- find length of string.
-* L26 -> strchr, strrchr -- locate character in string.
-* L30 -> strchr, strrchr -- locate character in string.
-* L37 -> strlcpy, strlcat -- size-bounded string copying and concatenation.
+* L25 -> strlen -- find length of string.
+* L26 -> strchr -- locate character in string.
+* L30 -> strchr -- locate character in string.
+* L37 -> strlcpy -- size-bounded string copying and concatenation.
 */
