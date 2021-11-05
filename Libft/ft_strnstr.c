@@ -40,6 +40,6 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 * in the null-terminated string NEEDLE in the 
 * string HAYSTACK, where not more than LEN 
 * characters are searched.
-* L21 -> strlen, strnlen -- find length of string.
-* L28 -> strcmp, strncmp -- compare strings.
+* L21 -> strlen -- find length of string.
+* L28 -> strcmp -- compare strings.
 */
