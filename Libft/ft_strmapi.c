@@ -31,10 +31,10 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	str[index] = '\0';
 	return (str);
 }
-/* L15 -> Applies the function F to each character of the
- * string S, and passing its index as first argument to
- * create a new string resulting from successive
- * applications of F.
- * L22 -> len = find length of string(s).
- * L23 -> If s and f doesnt exist returns 0.
- * L27 -> If there is no space returns 0.*/
+
+/*
+* L15 -> Applies the function ’f’ to each character of the string ’s’, 
+* and passing its index as first argument to create a new string (with malloc(3))
+* resulting from successive applications of ’f’.
+* L23 -> strlen -- find length of string
+*/
