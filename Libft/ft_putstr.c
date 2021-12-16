@@ -1,34 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: joaopere <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: joao_pereira <joao_pereira@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/30 12:31:46 by joaopere          #+#    #+#             */
-/*   Updated: 2021/11/30 12:31:48 by joaopere         ###   ########.fr       */
+/*   Created: 2021/11/30 09:55:06 by joaopere          #+#    #+#             */
+/*   Updated: 2021/12/15 13:03:49 by joao_pereir      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// if its %d
+#include "libft.h"
 
-void	ft_putnbr_fd(int n, int fd)
+int	ft_putstr(char *s)
 {
-	long int	i;
+	int	i;
+	int	count;
 
-	t = n;
-	if (t < 0)
+	i = 0;
+	count = 0;
+	if (!s)
 	{
-		t *= -1;
-		ft_putchar_fd('-', fd);
+		return(write(1, "(null)", 6));
 	}
-	if (t > 9)
+	while (s[i] != '\0')
 	{
-		ft_putnbr_fd((t / 10), fd);
-		ft_putchar_fd((t % 10 + '0'), fd);
+		write(1, &s[i], 1);
+		i++;
+		count++;
 	}
-	else
-	{
-		ft_putchar_fd((t + '0'), fd);
-	}
+	return(count);
 }

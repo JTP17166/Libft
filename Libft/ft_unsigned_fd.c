@@ -1,34 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_unsigned_fd.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: joaopere <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/30 12:31:46 by joaopere          #+#    #+#             */
-/*   Updated: 2021/11/30 12:31:48 by joaopere         ###   ########.fr       */
+/*   Created: 2021/12/04 15:13:19 by joaopere          #+#    #+#             */
+/*   Updated: 2021/12/04 15:13:21 by joaopere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// if its %d
+#include "ft_printf.h"
 
-void	ft_putnbr_fd(int n, int fd)
+int ft_unsigned_fd(unsigned int n)
 {
-	long int	i;
+	static int	c;
+	static int	i;
 
-	t = n;
-	if (t < 0)
+	i = n;
+	if (!c)
 	{
-		t *= -1;
-		ft_putchar_fd('-', fd);
+		c = 0;
 	}
-	if (t > 9)
+	if (i > 9)
 	{
-		ft_putnbr_fd((t / 10), fd);
-		ft_putchar_fd((t % 10 + '0'), fd);
+		ft_unsigned_fd(i / 10);
 	}
-	else
+	ft_putchar_fd((i % 10) + '0', 1);
+	c++;
+	if (n == 0)
 	{
-		ft_putchar_fd((t + '0'), fd);
+		return (1);
 	}
+	return (c);
 }

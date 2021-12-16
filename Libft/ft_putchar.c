@@ -1,23 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: joaopere <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: joao_pereira <joao_pereira@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/30 12:42:03 by joaopere          #+#    #+#             */
-/*   Updated: 2021/11/30 12:42:05 by joaopere         ###   ########.fr       */
+/*   Created: 2021/11/30 09:53:09 by joaopere          #+#    #+#             */
+/*   Updated: 2021/12/15 12:56:15 by joao_pereir      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-size_t    ft_strlen(char *s)
-{
-    size_t    i;
+#include "libft.h"
 
-    i = 0;
-    while (s[i] != '\0')
-    {
-        i++;
-    }
-    return (i);
-} 
+int	ft_putchar(char c)
+{
+	write(1, &c, 1);
+	return (1);
+}

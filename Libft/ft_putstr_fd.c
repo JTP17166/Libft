@@ -3,32 +3,31 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: joaopere <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: joao_pereira <joao_pereira@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/29 14:48:34 by joaopere          #+#    #+#             */
-/*   Updated: 2021/10/29 16:24:30 by joaopere         ###   ########.fr       */
+/*   Created: 2021/11/30 09:55:06 by joaopere          #+#    #+#             */
+/*   Updated: 2021/12/15 13:03:35 by joao_pereir      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putstr_fd(char *s, int fd)
+int	ft_putstr(char *s)
 {
 	int	i;
+	int	count;
 
 	i = 0;
+	count = 0;
 	if (!s)
 	{
-		return ;
+		return(write(1, "(null)", 6));
 	}
-	while (s[i])
+	while (s[i] != '\0')
 	{
-		ft_putchar_fd(s[i], fd);
+		write(1, &s[i], 1);
 		i++;
+		count++;
 	}
+	return(count);
 }
-
-/* 
-* L15 -> Outputs the string S to the given file descriptor.
-* L26 -> Outputs the character ’c’ to the given file descriptor.
-*/

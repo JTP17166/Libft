@@ -1,23 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_p.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: joaopere <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: joao_pereira <joao_pereira@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/30 12:42:03 by joaopere          #+#    #+#             */
-/*   Updated: 2021/11/30 12:42:05 by joaopere         ###   ########.fr       */
+/*   Created: 2021/12/13 11:59:52 by joao_pereir       #+#    #+#             */
+/*   Updated: 2021/12/13 12:01:19 by joao_pereir      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-size_t    ft_strlen(char *s)
-{
-    size_t    i;
+#include "libft.h"
 
-    i = 0;
-    while (s[i] != '\0')
-    {
-        i++;
-    }
-    return (i);
-} 
+int ft_p(unsigned long n)
+{
+    return (ft_putstr_fd("0x") + ft_convdechex_upper(n));
+}
